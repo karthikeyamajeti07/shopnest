@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: shopnest
+    runtime: node
+    buildCommand: npm install --legacy-peer-deps && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: AUTH_DATA_FILE
+        value: /opt/render/project/src/data/auth-data.json
+      - key: COMMERCE_DATA_FILE
+        value: /opt/render/project/src/data/commerce-data.json
+    disk:
+      name: shopnest-data
+      mountPath: /opt/render/project/src/data
+      sizeGB: 1

@@ -1,0 +1,6 @@
+{
+  "name": "Intelligent Online Shopping Agent",
+  "description": "Full-stack AI case study featuring a utility-based intelligent shopping agent recommending products based on multi-attribute customer preferences, price, ratings, availability, quality, and delivery time.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
